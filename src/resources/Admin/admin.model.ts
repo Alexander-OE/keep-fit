@@ -1,7 +1,7 @@
 import { Schema, model } from "mongoose";
-import admin from "./admin.interface";
+import userInterface from "../../utils/interface";
 
-const adminSchema = new Schema<admin>({
+const adminSchema = new Schema<userInterface>({
   firstname: {
     type: String,
     required: true,
@@ -44,3 +44,5 @@ const adminSchema = new Schema<admin>({
     default: false,
   },
 });
+
+export const Admin = model<userInterface>("admin", adminSchema);
