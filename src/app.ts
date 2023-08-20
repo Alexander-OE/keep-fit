@@ -12,9 +12,11 @@ const Port = process.env.PORT || 4000;
 const startUp = async () => {
   try {
     await urlConnection(process.env.MONGO_URL!);
-    app.listen(Port, () => console.log(`Server has started at port ${Port}`));
+    app.listen(Port, () => {
+      console.log(`Server has started at port ${Port}`);
+    });
   } catch (error) {
-    console.log('Error starting the server ', Error); 
+    console.log("Error starting the server ", error);
   }
 };
 

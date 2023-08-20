@@ -1,7 +1,7 @@
 import { Schema, model } from "mongoose";
-import userInterface from "../../utils/interface";
+import generalInterface from "utils/general.interface"; "../../utils/general.interface";
 
-const adminSchema = new Schema<userInterface>({
+const adminSchema = new Schema<generalInterface>({
   firstname: {
     type: String,
     required: true,
@@ -45,4 +45,4 @@ const adminSchema = new Schema<userInterface>({
   },
 });
 
-export const Admin = model<userInterface>("admin", adminSchema);
+export const Admin = model<generalInterface>("admin", adminSchema);
