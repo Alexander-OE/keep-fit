@@ -1,4 +1,4 @@
-import { Document } from "mongoose";
+import { Document, Schema } from "mongoose";
 
 export default interface plans extends Document {
   name: string;
@@ -8,4 +8,5 @@ export default interface plans extends Document {
   timeIntervals: number;
   subscriptionCount: number;
   isPublic: boolean;
+  createdBy: Schema.Types.ObjectId
 }

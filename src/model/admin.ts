@@ -1,5 +1,5 @@
 import { Schema, model } from "mongoose";
-import generalInterface from "utils/general.interface"; "../../utils/general.interface";
+import generalInterface from "../utils/general.interface"
 
 const adminSchema = new Schema<generalInterface>({
   firstname: {
@@ -37,7 +37,6 @@ const adminSchema = new Schema<generalInterface>({
   },
   profileImage: {
     type: String,
-    required: true,
   },
   profileIsPublic: {
     type: Boolean,

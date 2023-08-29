@@ -1,8 +1,7 @@
-import { Admin } from "./admin.model"
 
 export const defaultAdmin =  {
-    firstName: "sam",
-    lastName: "smith",
+    firstname: "sam",
+    lastname: "smith",
     email: "sam@gmail.com", 
     phoneNumber: 8155667879,
     age: 25,
