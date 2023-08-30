@@ -1,4 +1,0 @@
-
-const registerUser = () => {}
-
-const loginUser = () => {}

@@ -1,4 +1,4 @@
-import createAdmin from "../controllers/admin/admin.controller";
+import createAdmin from "../controllers/admin.controller";
 import mongoose from "mongoose";
 
 export const urlConnection = (url: string) => {

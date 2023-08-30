@@ -11,4 +11,5 @@ export default interface generalInterface extends Document {
   height: number;
   profileImage: string;
   profileIsPublic: boolean;
+  password: string;
 }

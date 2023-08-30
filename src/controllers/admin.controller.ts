@@ -1,5 +1,5 @@
-import { Admin } from "../../model/admin";
-import { defaultAdmin } from "../../utils/defaultAdmin";
+import { Admin } from "../model/admin";
+import { defaultAdmin } from "../utils/defaultAdmin";
 
 const createAdmin = async () => {
   try {
