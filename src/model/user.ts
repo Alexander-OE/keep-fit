@@ -17,7 +17,7 @@ const userSchema = new Schema<generalInterface>({
     unique: true,
     required: true,
   },
-  phoneNumber: {
+  phonenumber: {
     type: Number,
     required: true,
   },
@@ -57,5 +57,9 @@ userSchema.pre('save', async function () {
   this.password = await bcrypt.hash(this.password, salt);
 });
 
+userSchema.methods.comparePassword = async function (candidatePassword:string) {
+  const isMatch = await bcrypt.compare(candidatePassword, this.password)
+  return isMatch;
+}
 
 export const User = model<generalInterface>("user", userSchema);

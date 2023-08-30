@@ -15,7 +15,7 @@ const adminSchema = new Schema<generalInterface>({
     unique: true,
     required: true,
   },
-  phoneNumber: {
+  phonenumber: {
     type: Number,
     required: true,
   },

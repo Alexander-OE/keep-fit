@@ -4,7 +4,7 @@ export default interface generalInterface extends Document {
   firstname: string;
   lastname: string;
   email: string;
-  phoneNumber: number;
+  phonenumber: number;
   age: number;
   gender: string;
   weight: number;
@@ -12,4 +12,5 @@ export default interface generalInterface extends Document {
   profileImage: string;
   profileIsPublic: boolean;
   password: string;
+  comparePassword(candidatePassword: string): Promise<boolean>;
 }
